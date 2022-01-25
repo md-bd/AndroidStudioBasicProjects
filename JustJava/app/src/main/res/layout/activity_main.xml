@@ -9,8 +9,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Quantity"
         android:layout_marginBottom="16dp"
+        android:text="Quantity"
         android:textAllCaps="true" />
 
     <LinearLayout
@@ -22,17 +22,17 @@
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:layout_marginTop="16dp"
-            android:text="-"
-            android:onClick="decrement"/>
+            android:onClick="decrement"
+            android:text="-" />
 
         <TextView
             android:id="@+id/quantity_text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="2"
             android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
             android:layout_marginRight="8dp"
+            android:text="2"
             android:textColor="@android:color/black"
             android:textSize="16sp" />
 
@@ -40,18 +40,18 @@
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:layout_marginTop="16dp"
-            android:text="+"
-            android:onClick="increment"/>
+            android:onClick="increment"
+            android:text="+" />
 
     </LinearLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Price"
-        android:textColor="@android:color/black"
-        android:textAllCaps="true"
         android:layout_marginTop="16dp"
+        android:text="Price"
+        android:textAllCaps="true"
+        android:textColor="@android:color/black"
         android:textSize="16sp" />
 
     <TextView
@@ -68,7 +68,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="order"
-        android:onClick="submitOrder"/>
+        android:onClick="submitOrder"
+        android:text="order" />
 
 </LinearLayout>
