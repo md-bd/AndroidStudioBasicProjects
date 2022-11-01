@@ -8,6 +8,8 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
+
+
 /**
  * Helper methods related to requesting and receiving earthquake data from USGS.
  */
@@ -59,9 +61,14 @@ public final class QueryUtils {
 
                 String magnitude = properties.getString("mag");
                 String location = properties.getString("place");
-                String time = properties.getString("time");
+                // String time = properties.getString("time");
+                long timeInMilliseconds = properties.getLong("time");
+//                Date dateObject = new Date(timeInMilliseconds);
+//
+//                SimpleDateFormat dateFormatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+//                String dateToDisplay = dateFormatter.format(dateObject);
 
-                Earthquake earthquake = new Earthquake(magnitude, location, time);
+                Earthquake earthquake = new Earthquake(magnitude, location, timeInMilliseconds);
                 earthquakes.add(earthquake);
             }
 
